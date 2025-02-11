@@ -322,9 +322,35 @@ div.image img:hover {
 	transform: scale(1.2);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%; 
+  aspect-ratio: 16 / 9; 
+  object-fit: cover; 
+}
+
+.cta-button {
+  position: fixed; 
+  bottom: 15px; 
+  right: 10px; 
+  padding: 15px 25px; 
+  background-color: #6aaed6; 
+  color: white; 
+  font-size: 12px; 
+  border-radius: 6px; 
+  text-decoration: none; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease; 
+}
 
 
-
+.cta-button:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /
+}
 
 
  
