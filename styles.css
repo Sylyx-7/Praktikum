@@ -181,6 +181,68 @@ html {
   height: 600px;
   background-color: rgb(113, 210, 223);
 }
+.fullscreen-section {
+  width: 100vw;    
+  height: 100vh;    
+  background-color: #6aaed6; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+}
+.responsive-image {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+}
+.card {
+  background-color: rgb(12, 12, 12);
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(8, 192, 238, 0.1);
+  padding: 24px;
+  max-width: 320px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card-content {
+  color: #4cbadb;
+}
+@keyframes colorChange {
+  0% {
+    background-color: #3498db;
+  }
+  50% {
+    background-color: #7ac9ee;
+  }
+  100% {
+    background-color: #21e0c7;
+  }
+}
+
+.animated-button {
+  background-color: #3498db;
+  color: rgb(5, 5, 5);
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  animation: colorChange 3s infinite alternate;
+}
+
+.animated-button:hover {
+  transform: scale(1.05);
+}
+
+
+
 
 
 
