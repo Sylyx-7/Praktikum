@@ -104,18 +104,18 @@
  <div class="main" id="section1">
    <h2>Startseite</h2>
    <p>Klicke auf den Link um den Smooth Scrolling Effekt zu sehen.</p>
-   <a href="Startseite">Klick drauf um zur Startseite zu gelangen</a>
+   <a href="#Startseite">Klick drauf um zur Startseite zu gelangen</a>
    <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
  </div>
  
  <div class="main" id="section2">
    <h2>Über mich</h2>
-   <a href="Über mich">Klicke hier um zu Seite "Über mich" zu gelangen</a>
+   <a href="#Über mich">Klicke hier um zu Seite "Über mich" zu gelangen</a>
  </div>
 
  <div class="main" id="section3">
     <h2>Kontakt</h2>
-    <a href="Kontakt">Klicke hier um zu Seite "Kontakt" zu gelangen</a>
+    <a href="#Kontakt">Klicke hier um zu Seite "Kontakt" zu gelangen</a>
   </div>
 
   <div class="fullscreen-section">
@@ -147,7 +147,20 @@
 <h1>Willkommen!</h1>
 </body>
 
+<nav id="navigation"></nav>
 
+<script>
+    
+    const navItems = ["Startseite", "Über mich", "Kontakt"];
+    const nav = document.getElementById("navigation");
+    navItems.forEach(item => {
+        const link = document.createElement("a");
+        link.href = "#"; 
+        link.textContent = item;
+        nav.appendChild(link);
+    });
+
+</script>
 
 
 
