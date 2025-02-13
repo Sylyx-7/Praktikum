@@ -262,37 +262,6 @@ img:hover {
 body {
   background-color: #333;
 }
-
-.menu-btn {
-  display: block;
-  right: 5%;
-  margin: 1em;
-  position: absolute;
-  top: 2%;
-  width: 36px;
-  transform: translate(-50%,-50%);  
-}
-
-.menu-btn:before,
-.menu-btn:after {
-  background-color: #fff;
-  content: '';
-  display: block;
-  height: 4px;
-  transition: all 200ms ease-in-out;
-}
-.menu-btn:before {
-  box-shadow: 0 10px 0 #fff;
-  margin-bottom: 16px;
-}
-.menu-btn:hover:before {
-  box-shadow: 0 0 0 #fff;
-  transform: translateY(10px) rotate(45deg);
-}
-.menu-btn:hover:after{
-  transform: translateY(-10px) rotate(-45deg);
-}
-
 div.image {
 	width: 300px;
 	height: 200px;
@@ -391,7 +360,7 @@ nav a {
 }
 
 .scrolled {
-  background: rgb(114, 226, 230);
+  background: rgb(255, 255, 255);
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -399,4 +368,54 @@ nav a {
 .content {
   height: 200vh;
   padding: 100px 20px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.menu-icon {
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: #669fd8;
+  display: none;
+  text-align: center;
+}
+
+
+.nav-links li {
+  padding: 15px 0;
+}
+
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: block;
+}
+
+
+.show {
+  display: block;
+}
+
+
+.content {
+  padding: 70px 20px;
+  height: 100vh; 
 }

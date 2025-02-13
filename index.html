@@ -158,12 +158,34 @@
 
 </script>
 
+<script>
+  const email = "lisaweber@webentwicklerin.de";
+  const link = document.createElement("a");
+  link.href = "mailto:" + email;
+  link.textContent = email;
+  document.getElementById("emailLink").appendChild(link);
+</script>
+
 <nav id="navbar">
 <a href="#Startseite">Startseite</a>
 <a href="#Startseite">Über mich</a>
 <a href="#Startseite">Kontakt</a>
 </nav>
 <div class="content">
+
+  <nav class="navbar">
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+    <li><a href="#Startseite">Startseite</a></li>
+    <li><a href="#Über mich">Über mich</a></li>
+    <li><a href="#Kontakt">Kontakt</a></li>
+    </ul>
+
+</nav>
+
+
+<script src="script.js"></script>  
+
   <div id="ende">
     <h2>ENDE</h2>
   </div>
