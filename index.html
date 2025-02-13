@@ -103,9 +103,7 @@
 
  <div class="main" id="section1">
    <h2>Startseite</h2>
-   <p>Klicke auf den Link um den Smooth Scrolling Effekt zu sehen.</p>
    <a href="#Startseite">Klick drauf um zur Startseite zu gelangen</a>
-   <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
  </div>
  
  <div class="main" id="section2">
@@ -144,7 +142,7 @@
 </script>
 </head>
 <body>
-<h1>Willkommen!</h1>
+
 </body>
 
 <nav id="navigation"></nav>
@@ -163,9 +161,17 @@
 </script>
 
 
+<p>Kontakt: <span id="emailLink"></span></p>
 
+<script>
+   
+    const email = "lisaweber@webentwicklerin.de";
+    const link = document.createElement("a");
+    link.href = "mailto:" + email;
+    link.textContent = email;
+    document.getElementById("emailLink").appendChild(link);
 
-
+</script>
 
 
   <div id="ende">
