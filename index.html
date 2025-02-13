@@ -20,11 +20,11 @@
 
     <!-- Navigation mit Links -->
     <nav>
-        <ul>
-            <li><a href="about">Über mich</a></li>
-            <li><a href="projects">Projekte</a></li>
-            <li><a href="contact">Kontakt</a></li>
-        </ul>
+        
+    <a href="about"></a>
+    <a href="projects"></a>
+    <a href="contact"></a>
+        
     </nav>
 
     <!-- Hauptbereich "Über mich" -->
@@ -84,9 +84,7 @@
 
   <nav class="Navigation">
     <ul>
-      <li><a href="#Startseite">Startseite</a></li>
-      <li><a href="#Über mich">Über mich</a></li>
-      <li><a href="#Kontakt">Kontakt</a></li>
+      
     </ul>
   </nav>
 
@@ -160,20 +158,12 @@
 
 </script>
 
-
-<p>Kontakt: <span id="emailLink"></span></p>
-
-<script>
-   
-    const email = "lisaweber@webentwicklerin.de";
-    const link = document.createElement("a");
-    link.href = "mailto:" + email;
-    link.textContent = email;
-    document.getElementById("emailLink").appendChild(link);
-
-</script>
-
-
+<nav id="navbar">
+<a href="#Startseite">Startseite</a>
+<a href="#Startseite">Über mich</a>
+<a href="#Startseite">Kontakt</a>
+</nav>
+<div class="content">
   <div id="ende">
     <h2>ENDE</h2>
   </div>
