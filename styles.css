@@ -476,3 +476,39 @@ button {
 button:hover {
   background-color: #222121;
 }
+
+
+.project-card {
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgb(32, 32, 32);
+  background-color: #63c4e2;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.project-info {
+  padding: 10px;
+}
+
+.project-info h3 {
+  margin: 0;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+
+.project-card .toggle-btn {
+  background-color: #ffffff;
+  color: #0e0e0e;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.project-card .toggle-btn:hover {
+  background-color: #fcfcfc;
+}
