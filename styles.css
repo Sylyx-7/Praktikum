@@ -442,3 +442,37 @@ button {
 h1 {
   font-size: clamp(1.5rem, 5vw, 3rem);
 }
+
+
+form {
+  width: 200px;
+  margin: 0 auto;
+}
+
+label {
+  display:block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #dad6d6;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #d8ddf0;
+  color: #bbb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+button:hover {
+  background-color: #222121;
+}
