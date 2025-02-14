@@ -12,6 +12,8 @@
   <h1>Willkommen auf meinem Portfolio</h1>
   <p><a href="#ende">Gehe zum Ende</a></p>  	
 
+
+
     <!-- Header mit dem Namen und Beschreibung -->
     <header>
         <h1>Lisa Weber | Webentwicklerin</h1>
@@ -194,8 +196,6 @@
 
 
 <script src="script.js"></script>  
-
-<nav class="navbar">
 <button id="darkModeToggle">🌙 Dark Mode</button>
 <script src="script.js"></script>
 </nav>
@@ -263,6 +263,19 @@
   });
 </script>
 
+
+<button onclick="smoothScroll()">Nach unten scrollen</button>
+
+    <div id="ziel">Zielbereich</div>
+
+    <script>
+    function smoothScroll() {
+    document.getElementById("ziel").scrollIntoView({ 
+    behavior: "smooth", 
+    block: "start" 
+    });
+    }
+    </script>
 
 
   <div id="ende">

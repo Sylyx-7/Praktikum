@@ -554,7 +554,6 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #c1e0e0;
   padding: 5px 0;
   text-align: center;
   font-family: Arial, sans-serif;
@@ -569,4 +568,26 @@ footer {
   font-size: 1em;
   font-weight: bold;
   margin-top: 5px;
+}
+
+body {
+font-family: Arial, sans-serif;
+height: 1500px;
+}
+
+#ziel {
+  margin-top: 800px;
+  padding: 15px;
+  background-color: #6aaed6;
+}
+
+button {
+  position:fixed;
+  top: 15px;
+  left: 15px;
+  padding: 15px;
+  background-color: #0ef5f5;
+  color: #c1e0e0;
+  border: none;
+  cursor: pointer;
 }
