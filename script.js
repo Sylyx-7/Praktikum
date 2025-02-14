@@ -22,3 +22,23 @@ this.textContent = 'Weniger anzeigen';
       }
     });
   });
+
+  function updateClock() {
+    const clockElemnet = document.getElementById('clock');
+    const now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds(); 
+
+    hours = hours <10 ? '0' + hours : hours;
+    minutes = minutes <10 ? + minutes : minutes;
+    seconds = seconds <10 ? + seconds : seconds;
+
+
+  const timeString = `${hours}:${minutes}.${seconds}`;
+  clockElemnet.textContent = timeString;
+  }
+
+  setInterval(updateClock, 1000);
+
+  updateClock();
