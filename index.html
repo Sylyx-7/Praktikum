@@ -225,11 +225,43 @@
 
 
 
+<h1>Projektliste</h1>
+<label for="kategorieFilter">Kategorie filtern:</label>
+<select id="kategorieFilter">
+<option value="all">Alle</option>
+<option value="web">Webentwicklung</option>
+<option value="design">Design</option>
+</select>
 
 
+<div id="projektList">
+<div class="projekt" data-category="web">
+<h3>Projekt 1: Framework</h3>
+<p>Kategorie: Webentwicklung</p>
+</div>
+<div class="projekt" data-category="design">
+<h3>Projekt 2: Portfolio-Seite</h3>
+<p>Kategorie: Design</p>
+</div>
+</div>
 
 
-
+<script>
+ document.getElementById('kategorieFilter').addEventListener('change', function() {
+ const filterValue = this.value;
+ const projects = document.querySelectorAll('.projekt');
+      
+  projects.forEach(function(project) {
+  const projectCategory = project.getAttribute('data-category');
+          
+  if (filterValue === 'all' || filterValue === projectCategory) {
+  project.style.display = 'block'; 
+  } else {
+  project.style.display = 'none';
+  }
+  });
+  });
+</script>
 
 
 
