@@ -278,6 +278,32 @@
     }
     </script>
 
+<h1>Meine Projekte</h1>
+<div id="projekt-container">Lade Projekt</div>
+
+<script>
+    fetch('projekt.json')
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('projekt-container');
+            container.innerHTML = ''; 
+
+            data.forEach(projekt => {
+                const div = document.createElement('div');
+                div.classList.add('projekt');
+                div.innerHTML = `
+                <h2>${projekt.name}</h2>
+                <a href="${projekt.link}" "target= _blank"></a>
+                `;
+                container.appendChild(div);
+            });
+        })
+        .catch(error => {
+            console.error('Fehler beim Laden der JSON:', error);
+            document.getElementById('projekt-container').innerText = "Das Projekt konnte nicht geladen werden.";
+        });
+</script>
+
   <div id="ende">
     <h2>ENDE</h2>
   </div>
