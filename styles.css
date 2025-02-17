@@ -591,3 +591,25 @@ button {
   border: none;
   cursor: pointer;
 }
+
+.sticky-contact {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #3ff0d2;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  text-align: center;
+}
+
+.sticky-contact a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sticky-contact:hover {
+  background-color: #272525; 
+}
