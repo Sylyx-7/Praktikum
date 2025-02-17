@@ -613,3 +613,17 @@ button {
 .sticky-contact:hover {
   background-color: #272525; 
 }
+
+.gallery {
+  display: flex;
+}
+
+.gallery img {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.2s;
+}
+
+.gallery img:hover {
+transform:scale (1.0);
+}
