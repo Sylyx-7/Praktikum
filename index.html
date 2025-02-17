@@ -311,6 +311,24 @@
 <div class="gallery"></div>
 <img src="https://i.pinimg.com/736x/08/69/4f/08694fe2221e09e7834a7c62995029eb.jpg" alt="bild 1">
 <img src="https://kinsta.com/de/wp-content/uploads/sites/5/2023/06/css-image-styling.jpg" alt="bild 1">
+
+<div class="testimonial-container">
+  <p id="feedback">Super Portfolio!</p>
+  <h4 id="author">Giulia H.</h4>
+  <button onclick="nextTestimonial()">Weiter</button>
+
+  <script>
+    const testimonials = [
+      { text: '"Super Portfolio!"', author: "- Giulia H."}
+    ];
+    let index = 0;
+    function nextTestimonial () {
+      index = (index + 1) % testimonials.length;
+      document.getElementById("feedback").textContent = testimonials[index].text
+      document.getElementById("author").textContent = testimonials[author].text
+    }
+  </script>
+
   <div id="ende">
     <h2>ENDE</h2>
   </div>

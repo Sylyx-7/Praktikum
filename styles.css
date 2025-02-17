@@ -627,3 +627,38 @@ button {
 .gallery img:hover {
 transform:scale (1.0);
 }
+
+body {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0ef5f5;
+  margin: 0;
+}
+
+.testimonial-container {
+  width: 150px;
+  background: #a0e6e9;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px #272525;
+}
+
+.testimonial {
+display: none;
+}
+.testimonial.active {
+  display: block;
+}
+
+button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  border: none;
+  background: #3498db;
+  color: #bbb;
+  cursor: pointer;
+  border-radius: 5px;
+}
