@@ -329,6 +329,46 @@
     }
   </script>
 
+<form id="form">
+  <input type="text" id="name" placeholder="Name" required>
+  <input type="password" id="password" placeholder="Passwort" required>
+  <button type="submit">Speichern</button>
+</form>
+
+<script>
+  document.getElementById("form").onsubmit = function(event){
+    event.preventDeafault();
+
+    let data = {
+      name : document.getElementById("name").value,
+      password : document.getElementById("password").value
+    };
+    console.log(JSON.stringfy(data));
+  };
+</script>
+
+
+
+
+
+
+
+<div class="progress-container">
+<div class="progress-bar" id="progressBar"></div>
+</div>
+
+
+<script>
+  window.onscroll = function() { updateProgress()};
+
+function updateProgress(){
+  let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  let scrollPercent = (scrollTop / scrollHeight) * 10;
+  document.getElementById("progressBar").style.height = scrollPercent + "1%";
+}
+</script>
+
   <div id="ende">
     <h2>ENDE</h2>
   </div>

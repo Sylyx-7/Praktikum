@@ -628,14 +628,6 @@ button {
 transform:scale (1.0);
 }
 
-body {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #0ef5f5;
-  margin: 0;
-}
 
 .testimonial-container {
   width: 150px;
@@ -661,4 +653,26 @@ button {
   color: #bbb;
   cursor: pointer;
   border-radius: 5px;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+.progress-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background: #0ef5f5;  
+}
+
+.progress-bar {
+  width: 5px;
+  height: 0%;
+  background: #bbb;
 }

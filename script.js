@@ -40,5 +40,18 @@ this.textContent = 'Weniger anzeigen';
   }
 
   setInterval(updateClock, 1000);
-
   updateClock();
+
+
+  window.onscroll = function() {
+    updateProgressBar();
+};
+
+function updateProgressBar() {
+    const scrollPosition = window.scrollY;
+    const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercentage = (scrollPosition / pageHeight) * 100;
+    
+    const progressBar = document.getElementById('progress-bar');
+    progressBar.style.height = scrollPercentage + '%';
+}
