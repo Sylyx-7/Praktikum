@@ -143,40 +143,14 @@
     <img src="https://www.stephanroemer.de/media/k2/items/cache/9caa2793658f3cc387f216157300b1ce_XL.jpg?t=20201227_134955">
   </div>
   <a href="#" class="cta-button">Drück mich</a>
-<script>
-  console.log("Willkommen auf meinem Portfolio");
-        
-  setTimeout(function() {
-      console.log("Schön dich hier zu sehen");
-  }, 2000);
-</script>
+
+ 
+
 </head>
 <body>
-
 </body>
 
 <nav id="navigation"></nav>
-
-<script>
-    
-    const navItems = ["Startseite", "Über mich", "Kontakt"];
-    const nav = document.getElementById("navigation");
-    navItems.forEach(item => {
-        const link = document.createElement("a");
-        link.href = "#"; 
-        link.textContent = item;
-        nav.appendChild(link);
-    });
-
-</script>
-
-<script>
-  const email = "lisaweber@webentwicklerin.de";
-  const link = document.createElement("a");
-  link.href = "mailto:" + email;
-  link.textContent = email;
-  document.getElementById("emailLink").appendChild(link);
-</script>
 
 <nav id="navbar">
 <a href="#Startseite">Startseite</a>
@@ -246,63 +220,13 @@
 </div>
 </div>
 
-
-<script>
- document.getElementById('kategorieFilter').addEventListener('change', function() {
- const filterValue = this.value;
- const projects = document.querySelectorAll('.projekt');
-      
-  projects.forEach(function(project) {
-  const projectCategory = project.getAttribute('data-category');
-          
-  if (filterValue === 'all' || filterValue === projectCategory) {
-  project.style.display = 'block'; 
-  } else {
-  project.style.display = 'none';
-  }
-  });
-  });
-</script>
-
 <nav id="navbar"></nav>
 <button onclick="smoothScroll()">Nach unten scrollen</button>
 
     <div id="ziel">Zielbereich</div>
 
-    <script>
-    function smoothScroll() {
-    document.getElementById("ziel").scrollIntoView({ 
-    behavior: "smooth", 
-    block: "start" 
-    });
-    }
-    </script>
-
 <h1>Meine Projekte</h1>
 <div id="projekt-container">Lade Projekt</div>
-
-<script>
-    fetch('projekt.json')
-        .then(response => response.json())
-        .then(data => {
-            const container = document.getElementById('projekt-container');
-            container.innerHTML = ''; 
-
-            data.forEach(projekt => {
-                const div = document.createElement('div');
-                div.classList.add('projekt');
-                div.innerHTML = `
-                <h2>${projekt.name}</h2>
-                <a href="${projekt.link}" "target= _blank"></a>
-                `;
-                container.appendChild(div);
-            });
-        })
-        .catch(error => {
-            console.error('Fehler beim Laden der JSON:', error);
-            document.getElementById('projekt-container').innerText = "Das Projekt konnte nicht geladen werden.";
-        });
-</script>
 
 <div class="sticky-contact">
   <a href="mailto:lisaweber@webentwicklerin.de">Kontakt</a>
@@ -317,17 +241,6 @@
   <h4 id="author">Giulia H.</h4>
   <button onclick="nextTestimonial()">Weiter</button>
 
-  <script>
-    const testimonials = [
-      { text: '"Super Portfolio!"', author: "- Giulia H."}
-    ];
-    let index = 0;
-    function nextTestimonial () {
-      index = (index + 1) % testimonials.length;
-      document.getElementById("feedback").textContent = testimonials[index].text
-      document.getElementById("author").textContent = testimonials[author].text
-    }
-  </script>
 
 <form id="form">
   <input type="text" id="name" placeholder="Name" required>
@@ -335,39 +248,9 @@
   <button type="submit">Speichern</button>
 </form>
 
-<script>
-  document.getElementById("form").onsubmit = function(event){
-    event.preventDeafault();
-
-    let data = {
-      name : document.getElementById("name").value,
-      password : document.getElementById("password").value
-    };
-    console.log(JSON.stringfy(data));
-  };
-</script>
-
-
-
-
-
-
-
 <div class="progress-container">
 <div class="progress-bar" id="progressBar"></div>
 </div>
-
-
-<script>
-  window.onscroll = function() { updateProgress()};
-
-function updateProgress(){
-  let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  let scrollPercent = (scrollTop / scrollHeight) * 10;
-  document.getElementById("progressBar").style.height = scrollPercent + "1%";
-}
-</script>
 
   <div id="ende">
     <h2>ENDE</h2>
