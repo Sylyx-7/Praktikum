@@ -8,146 +8,154 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<head>
-  <h1>Willkommen auf meinem Portfolio</h1>
-  <p><a href="#ende">Gehe zum Ende</a></p>  	
-
-
-
-    <!-- Header mit dem Namen und Beschreibung -->
+    <!-- Header -->
     <header>
-
         <h1>Lisa Weber | Webentwicklerin</h1>
         <p>22 Jahre alt, Webentwicklerin mit Erfahrung in CSS, HTML und PHP</p>
+        <nav>
+            <ul>
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#projects">Projekte</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Navigation mit Links -->
-    <nav>
+    <!-- Hauptbereich -->
+    <main>
+        <!-- Über mich -->
+        <section id="about">
+            <h2>Über mich</h2>
+            <p>Ich bin Lisa Weber, eine leidenschaftliche Webentwicklerin mit Erfahrung in CSS, HTML und PHP. Mein Ziel ist es, benutzerfreundliche und funktionale Webseiten zu entwickeln.</p>
+        </section>
+
+        <!-- Projekte -->
+        <section id="projects">
+            <h2>Projekte</h2>
+            <div class="project-card">
+                <article>
+                    <h3>Projekt 1: Framework</h3>
+                    <p>Ich habe ein eigenes Framework entwickelt, das ich anderen zur Verfügung stelle, um deren Leben zu erleichtern.</p>
+                </article>
+                <button class="toggle-btn">Mehr zeigen</button>
+            </div>
+
+            <div class="project-card">
+                <article>
+                    <h3>Projekt 2: Portfolio-Seite</h3>
+                    <p>Dies ist meine eigene Portfolio-Website, auf der ich meine Projekte zeige und potenziellen Kunden meine Fähigkeiten präsentieren möchte.</p>
+                </article>
+                <button class="toggle-btn">Mehr zeigen</button>
+            </div>
+        </section>
+
+        <!-- Kontakt -->
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <p>Du kannst mich per E-Mail erreichen:</p>
+            <a href="mailto:lisaweber@webentwicklerin.de">lisaweber@webentwicklerin.de</a>
+        </section>
         
-    <a href="about"></a>
-    <a href="projects"></a>
-    <a href="contact"></a>
-        
-    </nav>
+        <footer>
+            <div class="footer-content">
+                <p id="clock"></p>
+            </div>
+        </footer>
+    </main>
 
-    <!-- Hauptbereich "Über mich" -->
-    <section id="about">
-        <h2>Über mich</h2>
-        <p>Ich bin Lisa Weber, eine leidenschaftliche Webentwicklerin mit Erfahrung in CSS, HTML und PHP . Mein Ziel ist es, Webseiten zu entwickeln, die benutzerfreundlich und funktional sind.</p>
-    </section>
+    <!-- Kontakt -->
+    <form id="contact-form" action="#" method="post">
+        <label for="name">Benutzername</label>
+        <input type="text" id="name" name="Benutzername" required>
+        <label for="password">Passwort</label>
+        <input type="password" id="password" name="Passwort" required>
+        <button type="submit">Absenden</button>
+        <p id="fehler-nachricht" style="color: red; display: none;">Fehler beim Absenden des Formulars</p>
+    </form>
 
-    <!-- Projektbereich -->
-    <section id="projects">
-        <h2>Projekte</h2>
-        
-
-        <div class="project-card">
-
-        <article>
-            <h3>Projekt 1: Framework</h3>
-            <p>Ich habe ein eignes Framework was ich den Leuten anbiete um ihnen das leben leichter zu machen</p>
-        </article>
-        <button class="toggle-btn">Mehr zeigen</button>
-      </div>
-
-        <div class="project-card">
-
-        <article>
-            <h3>Projekt 2: Portfolio-Seite</h3>
-            <p>Dies ist meine eigene Portfolio-Website, auf der ich meine Projekte zeige, und potentiellen Kunden meine Fähigkeiten zeigen möchte</p>
-        </article>
-        <button class="toggle-btn">Mehr zeigen</button>
-        </div>
-    </section>
-
-    <!-- Kontaktbereich -->
-    <section id="contact">
-        <h2>Kontakt</h2>
-        <p>Du kannst mich per E-Mail erreichen:</p>
-        <a href="mailto:lisaweber@webentwicklerin.de">lisaweber@webentwicklerin.de</a>
-
-    <!-- Flexbox -->
+     <!-- Flexbox -->
 
     </section>
-        <div class="box"> 
-        <section class="section">
-        <div class="content">
-        <h1>Lisa Weber</h1>
-    <p>Webentwicklerin</p>
-
+    <div class="box"> 
     <section class="section">
-        <article>
-          <h2>Lisa Weber</h2>
-         <img src="https://i.pinimg.com/736x/08/69/4f/08694fe2221e09e7834a7c62995029eb.jpg" >
-        </article>
-      </section>
-    </div>
+    <div class="content">
+    <h1>Lisa Weber</h1>
+<p>Webentwicklerin</p>
+
+<section class="section">
+    <article>
+      <h2>Lisa Weber</h2>
+     <img src="https://i.pinimg.com/736x/08/69/4f/08694fe2221e09e7834a7c62995029eb.jpg" >
+    </article>
+  </section>
+</div>
 </section>
 <div class="container">
-    <div class="left-column">
-      <h2>Meine Erfahrung</h2>
-      <p>Ich arbeite seit 2 Jahren in der Webentwicklung, ich arbeite hauptsächlich mit PHP,CSS und HTML.</p>
-    </div>
-    <div class="right-column">
-      <h2>Meine Projekte</h2>
-      <p>Ich war Teil mehrerer Projekte und jetzt fokussiere ich mich auf meine eigenen.</p>
-    </div>
-  </div>
+<div class="left-column">
+  <h2>Meine Erfahrung</h2>
+  <p>Ich arbeite seit 2 Jahren in der Webentwicklung, ich arbeite hauptsächlich mit PHP,CSS und HTML.</p>
+</div>
+<div class="right-column">
+  <h2>Meine Projekte</h2>
+  <p>Ich war Teil mehrerer Projekte und jetzt fokussiere ich mich auf meine eigenen.</p>
+</div>
+</div>
 
-  <nav class="Navigation">
-    <ul>
-      
-    </ul>
-  </nav>
-
-  <section id="Startseite" style="height: 100vh; background-color: aquamarine;">Startseite </section>
-  <section id="Über mich" style="height: 100vh; background-color: aquamarine;">Über mich </section>
-  <section id="Kontakt" style="height: 100vh; background-color: aquamarine;">Kontakt </section>
-
- <nav>
-     <a href="Startseite"></a>
-     <a href="Über mich"></a>
-     <a href="Kontakt"></a>
- </nav>
- <h1>Smooth Scroll</h1>
-
- <div class="main" id="section1">
-   <h2>Startseite</h2>
-   <a href="#Startseite">Klick drauf um zur Startseite zu gelangen</a>
- </div>
- 
- <div class="main" id="section2">
-   <h2>Über mich</h2>
-   <a href="#Über mich">Klicke hier um zu Seite "Über mich" zu gelangen</a>
- </div>
-
- <div class="main" id="section3">
-    <h2>Kontakt</h2>
-    <a href="#Kontakt">Klicke hier um zu Seite "Kontakt" zu gelangen</a>
-  </div>
-
-  <div class="fullscreen-section">
-    <h1>Vollbild-Sektion</h1>
-  </div>
-  <img src="https://i.pinimg.com/736x/08/69/4f/08694fe2221e09e7834a7c62995029eb.jpg"  class="responsive-image">
-
-  <img src="https://kinsta.com/de/wp-content/uploads/sites/5/2023/06/css-image-styling.jpg">
-
+<nav class="Navigation">
+<ul>
   
-  <div class="fade-in"></div>
+</ul>
+</nav>
 
-  
-  <a href="#" class="menu-btn"></a>
+<section id="Startseite" style="height: 100vh; background-color: aquamarine;">Startseite </section>
+<section id="Über mich" style="height: 100vh; background-color: aquamarine;">Über mich </section>
+<section id="Kontakt" style="height: 100vh; background-color: aquamarine;">Kontakt </section>
 
-  <div class="image">
-    <img src="https://www.stephanroemer.de/media/k2/items/cache/9caa2793658f3cc387f216157300b1ce_XL.jpg?t=20201227_134955">
-  </div>
-  <a href="#" class="cta-button">Drück mich</a>
+<nav>
+ <a href="Startseite"></a>
+ <a href="Über mich"></a>
+ <a href="Kontakt"></a>
+</nav>
+<h1>Smooth Scroll</h1>
 
- 
+<div class="main" id="section1">
+<h2>Startseite</h2>
+<a href="#Startseite">Klick drauf um zur Startseite zu gelangen</a>
+</div>
+
+<div class="main" id="section2">
+<h2>Über mich</h2>
+<a href="#Über mich">Klicke hier um zu Seite "Über mich" zu gelangen</a>
+</div>
+
+<div class="main" id="section3">
+<h2>Kontakt</h2>
+<a href="#Kontakt">Klicke hier um zu Seite "Kontakt" zu gelangen</a>
+</div>
+
+<div class="fullscreen-section">
+<h1>Vollbild-Sektion</h1>
+</div>
+<img src="https://i.pinimg.com/736x/08/69/4f/08694fe2221e09e7834a7c62995029eb.jpg"  class="responsive-image">
+
+<img src="https://kinsta.com/de/wp-content/uploads/sites/5/2023/06/css-image-styling.jpg">
+
+
+<div class="fade-in"></div>
+
+
+<a href="#" class="menu-btn"></a>
+
+<div class="image">
+<img src="https://www.stephanroemer.de/media/k2/items/cache/9caa2793658f3cc387f216157300b1ce_XL.jpg?t=20201227_134955">
+</div>
+<a href="#" class="cta-button">Drück mich</a>
+
+
 
 </head>
 <body>
+
 </body>
 
 <nav id="navigation"></nav>
@@ -159,29 +167,25 @@
 </nav>
 <div class="content">
 
-  <nav class="navbar">
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
-    <ul class="nav-links" id="navLinks">
-    <li><a href="#Startseite">Startseite</a></li>
-    <li><a href="#Über mich">Über mich</a></li>
-    <li><a href="#Kontakt">Kontakt</a></li>
-    </ul>
+<nav class="navbar">
+<div class="menu-icon" onclick="toggleMenu()">☰</div>
+<ul class="nav-links" id="navLinks">
+<li><a href="#Startseite">Startseite</a></li>
+<li><a href="#Über mich">Über mich</a></li>
+<li><a href="#Kontakt">Kontakt</a></li>
+</ul>
 
 </nav>
-
-
-<script src="script.js"></script>  
-<button id="darkModeToggle">🌙 Dark Mode</button>
-<script src="script.js"></script>
-</nav>
+<h1>Dark Mode Beispiel</h1>
+<button id="toggleDarkMode">Dark Mode</button>
 
 <form id="contact-form" action="#" method="post">
-  <label for="name">Benutzername</label>
-  <input type="text" id="name" name="Benutzername" required>
-  <label for="password">Passwort</label>
-  <input type="password" id="password" name="Passwort" required>
-  <button type="submit">Absenden</button>
-  <p id="fehler nachricht" style="color: red; display: none;"></p>
+<label for="name">Benutzername</label>
+<input type="text" id="name" name="Benutzername" required>
+<label for="password">Passwort</label>
+<input type="password" id="password" name="Passwort" required>
+<button type="submit">Absenden</button>
+<p id="fehler nachricht" style="color: red; display: none;"></p>
 </form>
 
 <div class="profile-card">
@@ -193,9 +197,9 @@
 
 
 <footer>
-  <div class="footer-content">
-    <p id="clock"></p>
-  </div>
+<div class="footer-content">
+<p id="clock"></p>
+</div>
 </footer>
 
 
@@ -223,13 +227,14 @@
 <nav id="navbar"></nav>
 <button onclick="smoothScroll()">Nach unten scrollen</button>
 
-    <div id="ziel">Zielbereich</div>
+<div id="ziel">Zielbereich</div>
 
 <h1>Meine Projekte</h1>
 <div id="projekt-container">Lade Projekt</div>
 
+
 <div class="sticky-contact">
-  <a href="mailto:lisaweber@webentwicklerin.de">Kontakt</a>
+<a href="mailto:lisaweber@webentwicklerin.de">Kontakt</a>
 </div>
 
 <div class="gallery"></div>
@@ -237,25 +242,20 @@
 <img src="https://kinsta.com/de/wp-content/uploads/sites/5/2023/06/css-image-styling.jpg" alt="bild 1">
 
 <div class="testimonial-container">
-  <p id="feedback">Super Portfolio!</p>
-  <h4 id="author">Giulia H.</h4>
-  <button onclick="nextTestimonial()">Weiter</button>
-
-
+<p id="feedback">Super Portfolio!</p>
+<h4 id="author">Giulia H.</h4>
+<button onclick="nextTestimonial()">Weiter</button>
 <form id="form">
-  <input type="text" id="name" placeholder="Name" required>
-  <input type="password" id="password" placeholder="Passwort" required>
-  <button type="submit">Speichern</button>
+<input type="text" id="name" placeholder="Name" required>
+<input type="password" id="password" placeholder="Passwort" required>
+<button type="submit">Speichern</button>
 </form>
 
 <div class="progress-container">
 <div class="progress-bar" id="progressBar"></div>
 </div>
-
-  <div id="ende">
-    <h2>ENDE</h2>
-  </div>
-</head>
+<div id="ende">
+<h2>ENDE</h2>
 </div>
 </body>
 </html>
